@@ -1,0 +1,25 @@
+.OpinionPoll {
+    .bgc {
+        width: 98.85vw;
+        height: 99vh;
+        z-index: -100;
+        filter: blur(2.9rem);
+        position: relative;
+    }
+
+    .backdrop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        
+        h1{
+            font-size: 4rem;
+            color: #ffffff;
+        }
+    }
+}
