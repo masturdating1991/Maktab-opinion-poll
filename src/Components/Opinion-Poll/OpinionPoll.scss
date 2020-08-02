@@ -1,25 +1,91 @@
 .OpinionPoll {
-    .bgc {
-        width: 98.85vw;
-        height: 99vh;
-        z-index: -100;
-        filter: blur(2.9rem);
-        position: relative;
+
+  .bgc {
+    width: 98.85vw;
+    height: 99vh;
+    z-index: -100;
+    filter: blur(2.9rem);
+    position: relative;
+  }
+
+  .backdrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    h1 {
+      text-align: center;
+      font-size: 3.4rem;
+      color: #ffffff;
     }
 
-    .backdrop {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 35%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        
-        h1{
-            font-size: 4rem;
-            color: #ffffff;
-        }
+    img {
+      width: 20vw;
+      margin: 2rem 0 0 0;
     }
+
+    button {
+      width: 13rem;
+      height: 5.5rem;
+      border-radius: 4.5rem;
+      margin-top: 3rem;
+      font-size: 2.5rem;
+      color: #ffffff;
+      outline: none;
+      cursor: pointer;
+      background-image: linear-gradient(to right, #f197bd, #ed865d);
+      border: none;
+      transition: .3s;
+
+      &:hover {
+        background-image: linear-gradient(to right, #e0257d, #de5a17);
+        transform: scale(.9);
+      }
+    }
+  }
+
+  .footer {
+    width: 20vw;
+    position: relative;
+    top: 28rem;
+
+    p{
+      text-align: center;
+      margin-top: .5rem;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    &-intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: #ffffff;
+        font-size: 2.2rem;
+      }
+
+      a {
+        color: #ffffff;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 2rem;
+        margin-left: .5rem;
+        background-image: linear-gradient(to left, #f197bd, #ed865d);
+        border-radius: 2rem 1rem 1rem 1rem;
+        padding: .5rem;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+          background-image: linear-gradient(to right, #f197bd, #ed865d);
+        }
+      }
+    }
+  }
 }

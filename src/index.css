@@ -1,20 +1,27 @@
 @font-face {
-  font-family: "Yekan";
-  src: url("../src//Assets/fonts/Yekan.woff") format("woff"),
-    url("../src//Assets/fonts/Yekan.woff2") format("woff2")
+    font-family: "Yekan";
+    src: url("../src/Assets/fonts/Yekan.woff") format("woff"),
+    url("../src/Assets/fonts/Yekan.woff2") format("woff2")
 
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Yekan";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Yekan";
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
+
+
+body {
+    direction: rtl;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
