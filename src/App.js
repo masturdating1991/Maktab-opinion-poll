@@ -3,7 +3,7 @@ import OpinionPoll from './Components/Opinion-Poll/OpinionPoll'
 
 function App() {
     return (
-        <OpinionPoll />
+            <OpinionPoll/>
     )
 }
 

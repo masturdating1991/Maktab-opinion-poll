@@ -1,0 +1,10 @@
+.Background {
+  position: relative;
+
+  .bgc {
+    width: 98.85vw;
+    height: 99vh;
+    z-index: -100;
+    filter: blur(2.9rem);
+  }
+}
