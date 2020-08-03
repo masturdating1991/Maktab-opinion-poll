@@ -1,4 +1,73 @@
 .Question2 {
+  .stepper {
+    width: 30rem;
+    height: .5rem;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding: .5rem;
+
+    &-circle {
+      padding: 1.2rem;
+      border-radius: 50%;
+      background-color: #d8d8d8;
+      cursor: pointer;
+      transition: .3s;
+      z-index: 100;
+
+
+
+      &:first-child {
+        background-color: #f08a5d;
+
+      }
+
+      &:nth-child(2) {
+        background-color: #f08a5d;
+      }
+
+      &:nth-child(3) {
+        background-color: #f08a5d;
+        animation: jump 1s infinite;
+      }
+
+      @keyframes jump {
+        0% {
+          transform: translate(0, -10%);
+          background-color: #f08a5d;
+        }
+
+        50% {
+          transform: translate(0, -20%);
+          background-color: #b83b5e;
+        }
+
+        100% {
+          transform: translate(0, 0);
+          background-color: #f08a5d;
+        }
+      }
+    }
+
+    &-color {
+      width: 51%;
+      height: 1.2rem;
+      position: fixed;
+      top: 8%;
+      left: 25%;
+      transform: translate(-50%, -10%);
+      background-image: linear-gradient(to left, #b83b5e, #f08a5d);
+      border-radius: 2rem;
+      z-index: 1;
+    }
+  }
+
   .question-ask {
     position: absolute;
     top: 40%;

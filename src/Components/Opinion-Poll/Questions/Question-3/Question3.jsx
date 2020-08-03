@@ -7,6 +7,15 @@ function Question3() {
     return (
         <Background>
             <div className='Question3'>
+                <div className="stepper">
+                    <span className='stepper-circle st1'> </span>
+                    <span className='stepper-circle st2'> </span>
+                    <span className='stepper-circle st3'> </span>
+                    <span className='stepper-circle st4'> </span>
+                    <span className='stepper-circle st5'> </span>
+                    <span className='stepper-color'></span>
+                </div>
+
                 <div className='question-ask'>
                     <h2>{Data.questions[2].text}</h2>
                 </div>
@@ -17,17 +26,17 @@ function Question3() {
                 </div>
 
                 <footer>
-                    <div className="footer-right">
-                        <img src={Data.logo_url} alt='Logo'/>
-                    </div>
-
 
                     <div className='footer-left'>
                         <div className='footer-left-intro'>
-                            <p>قدرت گرفته از</p>
                             <button>Soally</button>
+                            <p>قدرت گرفته از</p>
                         </div>
-                        <p>پلتفرم طراحی فرم های CRM آنلاین</p>
+                        <p dir='rtl'>پلتفرم طراحی فرم های CRM آنلاین</p>
+                    </div>
+
+                    <div className="footer-right">
+                        <img src={Data.logo_url} alt='Logo'/>
                     </div>
                 </footer>
             </div>

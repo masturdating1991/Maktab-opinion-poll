@@ -1,89 +1,165 @@
-.backdrop {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 35%;
-  right: 50%;
-  transform: translate(50%, -50%);
-
-  h1 {
-    width: 70vw;
-    text-align: center;
-    font-size: 3.4rem;
-    color: #ffffff;
-  }
-
-  img {
-    width: 20vw;
-    margin: 2rem 0 0 0;
-  }
-
-  button {
-    width: 13rem;
-    height: 5.5rem;
-    border-radius: 4.5rem;
-    margin-top: 3rem;
-    font-size: 2.5rem;
-    color: #ffffff;
-    outline: none;
-    cursor: pointer;
-    background-image: linear-gradient(to right, #f197bd, #ed865d);
-    border: none;
-    transition: .3s;
-
-    a {
-      color: #ffffff;
-    }
-
-    &:hover {
-      background-image: linear-gradient(to right, #e0257d, #de5a17);
-      transform: scale(.9);
-    }
-  }
-}
-
-.footer {
-  width: 21rem;
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translate(50%, 0);
-
-  p {
-    text-align: center;
-    margin-top: .5rem;
-    font-size: 1.2rem;
-    color: #ffffff;
-  }
-
-  &-intro {
+.End {
+  .stepper {
+    width: 30rem;
+    height: .5rem;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 2rem;
+    padding: .5rem;
 
-    p {
+    &-circle {
+      padding: 1.2rem;
+      border-radius: 50%;
+      background-color: #d8d8d8;
+      cursor: pointer;
+      transition: .3s;
+      z-index: 100;
+
+
+      &:first-child {
+        background-color: #f08a5d;
+      }
+
+      &:nth-child(2) {
+        background-color: #f08a5d;
+      }
+
+      &:nth-child(3) {
+        background-color: #f08a5d;
+      }
+
+      &:nth-child(4) {
+        background-color: #f08a5d;
+      }
+
+      &:nth-child(5) {
+        background-color: #f08a5d;
+        animation: jump 1s infinite;
+      }
+
+      @keyframes jump {
+        0% {
+          transform: translate(0, -10%);
+          background-color: #b83b5e;
+        }
+
+        50% {
+          transform: translate(0, -20%);
+          background-color: #f08a5d;
+        }
+
+        100% {
+          transform: translate(0, 0);
+          background-color: #b83b5e;
+        }
+      }
+    }
+
+    &-color {
+      width: 101%;
+      height: 1.2rem;
+      position: fixed;
+      top: 8%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      background-image: linear-gradient(to left, #b83b5e, #f08a5d);
+      border-radius: 2rem;
+      z-index: 1;
+    }
+  }
+
+  .backdrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    h1 {
+      width: 70vw;
+      text-align: center;
+      font-size: 3.4rem;
       color: #ffffff;
-      font-size: 2.2rem;
+    }
+
+    img {
+      width: 20vw;
+      margin: 2rem 0 0 0;
     }
 
     button {
-      border: 0;
+      width: 13rem;
+      height: 5.5rem;
+      border-radius: 4.5rem;
+      margin-top: 3rem;
+      font-size: 2.5rem;
       color: #ffffff;
-      font-family: 'Architects Daughter', cursive;
-      font-size: 2.2rem;
-      margin-left: .5rem;
-      background-image: linear-gradient(to left, #f197bd, #ed865d);
-      border-radius: 2rem 1rem 1rem 1rem;
-      padding: .5rem;
+      outline: none;
       cursor: pointer;
-      transition: .5s;
+      background-image: linear-gradient(to right, #f197bd, #ed865d);
+      border: none;
+      transition: .3s;
+
+      a {
+        color: #ffffff;
+      }
 
       &:hover {
-        background-image: linear-gradient(to right, #f197bd, #ed865d);
+        background-image: linear-gradient(to right, #e0257d, #de5a17);
+        transform: scale(.9);
+      }
+    }
+  }
+
+  .footer {
+    width: 21rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0);
+
+    p {
+      text-align: center;
+      margin-top: .5rem;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    &-intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: #ffffff;
+        font-size: 2.2rem;
+      }
+
+      button {
+        border: 0;
+        color: #ffffff;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 2.2rem;
+        margin-left: .5rem;
+        background-image: linear-gradient(to left, #f197bd, #ed865d);
+        border-radius: 2rem 1rem 1rem 1rem;
+        padding: .5rem;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+          background-image: linear-gradient(to right, #f197bd, #ed865d);
+        }
       }
     }
   }
 }
-
