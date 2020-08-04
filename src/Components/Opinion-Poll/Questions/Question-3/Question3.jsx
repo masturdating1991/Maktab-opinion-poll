@@ -1,5 +1,6 @@
 import React from 'react'
-import Data from '../../../db/db'
+import Data from '../../../db/db.js'
+import {Link} from "react-router-dom";
 import './Question3.scss'
 import Background from "../../../Background/Background";
 
@@ -20,9 +21,9 @@ function Question3() {
                     <h2>{Data.questions[2].text}</h2>
                 </div>
                 <div className='question-answer'>
-                    <button>{Data.questions[2].options[0].text}</button>
-                    <button>{Data.questions[2].options[1].text}</button>
-                    <button>{Data.questions[2].options[2].text}</button>
+                    <button><Link to='/end'>{Data.questions[2].options[0].text}</Link></button>
+                    <button><Link to='/end'>{Data.questions[2].options[1].text}</Link></button>
+                    <button><Link to='/end'>{Data.questions[2].options[2].text}</Link></button>
                 </div>
 
                 <footer>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from "../db/db";
+import Data from "../db/db.js";
 import './Background.scss'
 
 function Background(props) {

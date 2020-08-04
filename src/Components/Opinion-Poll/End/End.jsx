@@ -1,12 +1,16 @@
 import React from 'react'
-import Data from '../../db/db'
+import Data from '../../db/db.js'
 import './End.scss'
 import Background from "../../Background/Background";
+import {Link} from "react-router-dom";
 
 function End() {
     return (
         <Background>
             <div className='End'>
+                <button className='home'>
+                    <Link to='/'>Home</Link>
+                </button>
                 <div className="stepper">
                     <span className='stepper-circle st1'> </span>
                     <span className='stepper-circle st2'> </span>
@@ -17,7 +21,7 @@ function End() {
                 </div>
 
                 <div className="backdrop">
-                    <h1>با تشکر از وقتی که صرف پاسخگویی به سوالات کردید.</h1>
+                    <h1 dir='rtl'>با تشکر از وقتی که صرف پاسخگویی به سوالات کردید.</h1>
                     <img src={Data.logo_url} alt='Logo'/>
                 </div>
 

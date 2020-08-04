@@ -1,8 +1,6 @@
 @font-face {
     font-family: "Yekan";
-    src: url("../src/Assets/fonts/Yekan.woff") format("woff"),
-    url("../src/Assets/fonts/Yekan.woff2") format("woff2")
-
+    src: url("../src/Assets/fonts/YekanBakh-Regular.ttf") format("truetype")
 }
 
 * {
@@ -21,4 +19,3 @@ html {
 a, a:hover {
     text-decoration: none;
 }
-

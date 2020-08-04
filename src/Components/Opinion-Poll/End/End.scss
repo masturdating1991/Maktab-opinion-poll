@@ -1,4 +1,27 @@
 .End {
+  .home {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    margin-left: .5rem;
+    border-radius: .5rem;
+    background-image: linear-gradient(to left, #f197bd, #ed865d);
+    transition: .5s;
+
+    &:hover {
+      background-image: linear-gradient(to right, #f197bd, #ed865d);
+    }
+
+    a {
+      font-family: 'Architects Daughter', cursive;
+      font-size: 2.2rem;
+      color: #ffffff;
+    }
+  }
+
   .stepper {
     width: 30rem;
     height: .5rem;
@@ -17,7 +40,6 @@
       padding: 1.2rem;
       border-radius: 50%;
       background-color: #d8d8d8;
-      cursor: pointer;
       transition: .3s;
       z-index: 100;
 
