@@ -1,5 +1,4 @@
 .Start {
-
   .backdrop {
     display: flex;
     flex-direction: column;
@@ -45,45 +44,45 @@
     }
   }
 
-  .footer {
-    width: 21rem;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transform: translate(50%, 0);
 
-    p {
-      text-align: center;
-      margin-top: .5rem;
-      font-size: 1.2rem;
-      color: #ffffff;
+}
+
+
+/***** Media Queries *****/
+@media screen and (max-width: 768px) {
+  .Start {
+    .backdrop {
+      h1 {
+        font-size: 3rem;
+      }
     }
+  }
+}
 
-    &-intro {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      p {
-        color: #ffffff;
-        font-size: 2.2rem;
+@media screen and (max-width: 576px) {
+  .Start {
+    .backdrop {
+      h1 {
+        font-size: 2.8rem;
       }
 
-      button {
-        border: 0;
-        color: #ffffff;
-        font-family: 'Architects Daughter', cursive;
-        font-size: 2.2rem;
-        margin-left: .5rem;
-        background-image: linear-gradient(to left, #f197bd, #ed865d);
-        border-radius: 2rem 1rem 1rem 1rem;
-        padding: .5rem;
-        cursor: pointer;
-        transition: .5s;
+      .logo {
+        width: 25vw;
+      }
+    }
+  }
+}
 
-        &:hover {
-          background-image: linear-gradient(to right, #f197bd, #ed865d);
-        }
+@media screen and (max-width: 360px) {
+  .Start {
+    .backdrop {
+      h1 {
+        width: 80vw;
+        font-size: 2.7rem;
+      }
+
+      .logo {
+        width: 35vw;
       }
     }
   }

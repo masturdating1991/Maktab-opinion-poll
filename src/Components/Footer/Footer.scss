@@ -1,0 +1,43 @@
+.footer {
+  width: 21rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+
+  p {
+    text-align: center;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+
+  &-intro {
+    width: 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+
+    button {
+      border: 0;
+      color: #ffffff;
+      font-family: 'Architects Daughter', cursive;
+      font-size: 2.2rem;
+      margin-left: .5rem;
+      background-image: linear-gradient(to left, #f197bd, #ed865d);
+      border-radius: 2rem 1rem 1rem 1rem;
+      padding: .5rem;
+      cursor: pointer;
+      transition: .5s;
+
+      &:hover {
+        background-image: linear-gradient(to right, #f197bd, #ed865d);
+      }
+    }
+  }
+}

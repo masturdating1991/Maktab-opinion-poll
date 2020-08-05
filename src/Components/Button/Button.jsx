@@ -8,7 +8,7 @@ function Button({ index, text }) {
     return (
         <button>
             {
-                <Link to={`${index == Data.questions.length - 1 ? '/end' : index + 1}`}>
+                <Link to={`${index === Data.questions.length - 1 ? '/end' : index + 1}`}>
                     {text}
                 </Link>
             }

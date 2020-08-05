@@ -29,28 +29,6 @@
       transition: .3s;
       z-index: 100;
 
-
-      &:first-child {
-        background-color: #f08a5d;
-        animation: jump 1s infinite;
-      }
-
-      @keyframes jump {
-        0% {
-          transform: translate(0, -10%);
-          background-color: #f08a5d;
-        }
-
-        50% {
-          transform: translate(0, -20%);
-          background-color: #b83b5e;
-        }
-
-        100% {
-          transform: translate(0, 0);
-          background-color: #f08a5d;
-        }
-      }
     }
 
     &-color {
@@ -91,7 +69,7 @@
     }
 
     &-color-2 {
-      width: 76%;
+      width: 75%;
       height: 1.2rem;
       position: fixed;
       top: 8%;
@@ -117,25 +95,19 @@
 
   .st-0 {
     background-color: #f08a5d;
-    animation: jump 1s infinite;
-  }
-
-  .st-1 {
-    background-color: #f08a5d;
-    animation: jump 1s infinite;
-  }
-
-  .st-2 {
-    background-color: #f08a5d;
-    animation: jump 1s infinite;
+    animation: jump1 1s infinite;
   }
 
   .st-end {
     background-color: #f08a5d;
-    animation: jump 1s infinite;
+    animation: jump2 1s infinite;
   }
 
-  @keyframes jump {
+  .st-bg {
+    background-color: #f08a5d;
+  }
+
+  @keyframes jump1 {
     0% {
       transform: translate(0, -10%);
       background-color: #f08a5d;
@@ -149,6 +121,23 @@
     100% {
       transform: translate(0, 0);
       background-color: #f08a5d;
+    }
+  }
+
+  @keyframes jump2 {
+    0% {
+      transform: translate(0, -10%);
+      background-color: #b83b5e;
+    }
+
+    50% {
+      transform: translate(0, -20%);
+      background-color: #f08a5d;
+    }
+
+    100% {
+      transform: translate(0, 0);
+      background-color: #b83b5e;
     }
   }
 }
