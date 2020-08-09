@@ -18,14 +18,9 @@ body {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
+
+
 a,
 a:hover {
-=======
-body {
-    overflow: hidden;
-}
-
-a, a:hover {
     text-decoration: none;
 }
