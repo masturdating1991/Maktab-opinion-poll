@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import InitialData from "../db/db";
 import Start from "./Start/Start";
 import Question from './Question/Question'
@@ -13,7 +13,7 @@ function OpinionPoll() {
         <BrowserRouter>
             <Switch>
                 <Route exact path='/'>
-                    <Start />
+                    <Start/>
                 </Route>
 
                 {
@@ -29,7 +29,7 @@ function OpinionPoll() {
 
 
                 <Route path='/end'>
-                    <End />
+                    <End/>
                 </Route>
 
             </Switch>

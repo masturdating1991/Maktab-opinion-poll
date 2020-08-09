@@ -3,7 +3,10 @@
     position: absolute;
     top: 10%;
     left: 5%;
-    padding: .5rem 1.5rem;
+    padding: 2rem 3rem;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.2rem;
+    color: #ffffff;
     cursor: pointer;
     border: 0;
     margin-left: .5rem;
@@ -15,11 +18,6 @@
       background-image: linear-gradient(to right, #f197bd, #ed865d);
     }
 
-    a {
-      font-family: 'Architects Daughter', cursive;
-      font-size: 2.2rem;
-      color: #ffffff;
-    }
   }
 
 

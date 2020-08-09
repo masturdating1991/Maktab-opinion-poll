@@ -6,7 +6,7 @@ function Background(props) {
 
     return (
         <div className='Background'>
-            <img className='bgc' src={Data.background_url} alt='Background'/>
+            <img className='bgc' src={Data.background_url} alt='Background' />
             <div className="stepper">
                 <span
                     className={`${window.location.pathname === '/' ? 'stepper-circle st-0' : 'stepper-circle'}`}>

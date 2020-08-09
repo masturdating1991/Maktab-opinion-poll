@@ -4,15 +4,18 @@ import { Link } from "react-router-dom";
 import Data from "../db/db";
 
 
-function Button({ index, text }) {
+function Button({ index, text, click }) {
+
+
     return (
-        <button>
+        <Link to={`${index === Data.questions.length - 1 ? '/end' : index + 1}`} >
             {
-                <Link to={`${index === Data.questions.length - 1 ? '/end' : index + 1}`}>
+                <button onClick={click} className='inner-btn-text'>
                     {text}
-                </Link>
+                </button>
             }
-        </button>
+
+        </ Link>
     )
 }
 
