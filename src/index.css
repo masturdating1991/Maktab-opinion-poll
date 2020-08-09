@@ -18,7 +18,15 @@ body {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 a,
 a:hover {
+=======
+body {
+    overflow: hidden;
+}
+
+a, a:hover {
+>>>>>>> c52ae45b23dfb49f178925c5e588cdceead1b6cd
     text-decoration: none;
 }
