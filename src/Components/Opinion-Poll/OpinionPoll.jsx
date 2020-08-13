@@ -1,5 +1,5 @@
-import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import React, { useState } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import InitialData from "../db/db";
 import Start from "./Start/Start";
 import Question from './Question/Question'
@@ -7,19 +7,21 @@ import End from "./End/End";
 
 
 function OpinionPoll() {
-
+    const [saveAnswer, setSaveAnswer] = useState([])
     return (
-
+       
         <BrowserRouter>
             <Switch>
                 <Route exact path='/'>
-                    <Start/>
+                    <Start />
                 </Route>
 
                 {
                     InitialData.questions.map((data, index) =>
                         <Route key={data.id} path={`/${index}`}>
                             <Question
+                                saveAnswer={saveAnswer}
+                                setSaveAnswer={setSaveAnswer}
                                 data={data}
                                 index={index}
                             />
@@ -29,7 +31,7 @@ function OpinionPoll() {
 
 
                 <Route path='/end'>
-                    <End/>
+                    <End />
                 </Route>
 
             </Switch>

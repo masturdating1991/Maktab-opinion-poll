@@ -1,22 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Question.scss'
 import Background from "../../Background/Background";
 import Button from "../../Button/Button";
 import QuestionFooter from "../../Question Footer/QuestionFooter";
 
 
-function Question({ data, index }) {
-
-    const [saveAnswer, setSaveAnswer] = useState([])
-
+function Question({ data, index, saveAnswer, setSaveAnswer }) {
 
     const handleAnswer = (text) => {
         setSaveAnswer([...saveAnswer, {
             id: index,
             text
         }])
-        console.log(saveAnswer)
     }
+
 
     return (
         <Background>
@@ -31,7 +28,6 @@ function Question({ data, index }) {
                     {
                         data.options.map(item =>
                             <Button
-                                
                                 click={() => handleAnswer(item.text)}
                                 key={item.key}
                                 text={item.text}
