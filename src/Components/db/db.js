@@ -2,7 +2,7 @@ let InitialData = {
     organization_name: "Snapp",
     organization_name_fa: "اسنپ",
     logo_url: "https://snapp.ir/assets/images/logo/logo.png",
-    background_url: "https://images.unsplash.com/photo-1490143921278-d853145e4977?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1449&q=80",
+    background_url: "http://www.coca.ir/wp-content/uploads/2017/07/iran-beautiful-nature-photos.jpg",
     questions: [
         {
             id: 1,
